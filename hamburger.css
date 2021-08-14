@@ -1,0 +1,95 @@
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+/* hamburger end */
+
+/* media query for hamburger menu */
+@media only screen and (max-width: 650px) {    
+    .nav-list {
+        position: fixed;
+        left: -150%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgba(128, 0, 0, 0.918);
+        width: 100%;
+        max-height: 100vh;
+        margin-top: 0;
+        /* padding-top: 2rem; */
+        /* margin-left: 5%; */
+        /* border-radius: 10px; */
+        text-align: left;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.342);
+        height: 100vh;
+        background-image: url("./images/ham-bg.png");
+        background-repeat: no-repeat;
+        /* background-position: bottom; */
+        background-position-y: 180%;
+        /* background-position-x: 100%; */
+        background-size: contain;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+    /* Hamburger code */
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* Hamburger code */
+
+    .list-item {
+        margin-left: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .list-item:first-child {
+        margin-top: 2.5rem;
+    }
+
+    .nav-links {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .nav-btn {
+        background-color: white;
+        color: black;
+        font-size: 1.5rem;
+        width: 70%;
+        font-weight: bold;
+    }
+}

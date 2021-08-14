@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: navy;
+    font-size: 18px;
+}
+
+p {
+    color: rgba(0, 0, 128, 0.7);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+    border-radius: .3rem;
+    border: none;
+    background-color: navy;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-text {
+    width: 90%;
+    margin: auto;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-start {
+    width: 15rem;
+    font-size: 90%;
+}
+
+.nav-links {
+    color: white;
+}
+
+.button-house {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mockup {
+    background-color: cyan;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.intro-img {
+    width: 85%;
+    margin: auto;
+}
+
+#learn {
+    padding-bottom: .2rem;
+    border-bottom: 1px solid;
+}
+
+.top-text {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.top-face {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.face{
+    width: 13%;
+    margin-bottom: .5rem;
+}
+
+.left {
+    margin-left: .5rem;
+}
+
+.main-bottom {
+    background-color: rgb(170, 222, 243);
+}
+
+.bottom-text {
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.bottom-text h3, h4{
+    color: rgb(70, 70, 219);
+}
+
+.bottom-text h1{
+    color: rgb(5, 117, 74);
+}
+
+.arrow {
+    color: rgba(0, 0, 0, 0.589);
+    font-weight: bold;
+}
+
+.bt2 {
+    padding-bottom: 1rem;
+}
+
+.footer {
+    color: black;
+}
+
+.footer a{
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.footer-content {
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.f-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-links div {
+    width: 50%;
+}
+
+.closing-div {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.705);
+    border-radius: .5rem;
+    padding: .35rem;
+    margin-bottom: 2rem;
+}
+
+.close input {
+    border: none;
+    height: 3rem;
+    width: 45%;
+}
+
+.extra-bg {
+    display: none;
+}
+
+@media (min-width:650px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .header {
+        background-image: url("./Assets/bg-top.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 50vw;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .list-item {
+        margin-left: 2rem;
+    }
+
+    .d-btn {
+        margin-left: 15rem;
+    }
+
+    .nav-links {
+        color: black;
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+    }
+
+    .intro-text {
+        width: 40%;
+        padding-bottom: 4rem;
+    }
+
+    .mockup {
+        width: 50%;
+        margin-top: 0;
+        padding-bottom: 5rem;
+    }
+
+    .top-text-head {
+        display: flex;
+        align-items: center;
+    }
+
+    .top-text-head h1 {
+        width: 50%;
+    }
+
+    .top-face {
+        width: 50%;
+    }
+
+    .face {
+        width: 15%;
+    }
+
+    .f-links div {
+        width: 25%;
+    }
+
+    .closing-div {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(0, 0, 0, 0.705);
+        border-radius: .5rem;
+        padding: .35rem;
+        margin-bottom: 2rem;
+        width: 60%;
+    }
+
+    .w-photos {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width:950px) {
+    .mockup {
+        width: 50.6%;
+        margin-top: 0;
+        padding-bottom: 5rem;
+    }
+
+    .top-text {
+        display: flex;
+    }
+
+    .top-text-head {
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .w-photos {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mid-text {
+        /* width: ; */
+    }
+}
